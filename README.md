@@ -1,5 +1,6 @@
  # K-Means-Algorithm
-Este repositorio contiene una implementación del algoritmo de K-Means clustering construido desde cero usando Python. El proyecto demuestra conceptos clave del aprendizaje no supervisado mediante la agrupación de un conjunto de datos sintéticos y la posterior predicción usando el algoritmo KNN. 
+Este repositorio contiene una implementación del algoritmo de K-Means clustering construido desde cero usando Python. El proyecto demuestra conceptos clave del aprendizaje no supervisado mediante la agrupación de un conjunto de datos sintéticos y la posterior predicción usando el algoritmo KNN.
+
 Dentro de este repositorio se puede encontrar el archivo .py del código, así como un pdf con ejemplos del funcionamiento del código.
 
 Para empezar con el código se inicializa el dataset que son puntos al azar hechos con make_moons y el número de datos es el que el usuario ingrese, además se añade un ruido de 0.3.

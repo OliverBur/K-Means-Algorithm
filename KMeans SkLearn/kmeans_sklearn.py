@@ -19,7 +19,7 @@ def pca(data, n_components=2):
     return pca, data_pca
 
 def kmeans(data, n_clusters):
-    kmeans = KMeans(n_clusters=n_clusters)
+    kmeans = KMeans(n_clusters=n_clusters, random_state=0)
     kmeans.fit(data)
     data['cluster'] = kmeans.labels_
     return data
@@ -36,7 +36,7 @@ def silhouette(data, n_clusters):
     # Se va a calcular el Silhouette Score para determinar el número óptimo de clusters
     silhouette = []
     for i in range(3, 10):
-        kmeans = KMeans(n_clusters=i)
+        kmeans = KMeans(n_clusters=i, random_state=0)
         kmeans.fit(data)
         labels = kmeans.labels_
         silhouette.append([i, silhouette_score(data, labels)])
